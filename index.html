@@ -1,0 +1,774 @@
+
+<!doctype html>
+<html lang="fr" xmlns="https://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <meta name="description" content="Description" />
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <title>Landing Page</title>
+<link rel="stylesheet" type="text/css" href="https://s.packpp.dolist.net/TemplateManager/lpprint.css" media="print">
+<style type="text/css">
+        body {
+            width: 100%;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            -webkit-text-size-adjust: none;
+            -webkit-font-smoothing: antialiased;
+            -ms-text-size-adjust: none;
+            mso-margin-top-alt: 0px;
+            mso-margin-bottom-alt: 0px;
+            mso-padding-alt: 0px 0px 0px 0px;
+            font-family: Tahoma, Geneva, sans-serif;
+        }
+
+        html {
+            width: 100%;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        table,
+        td {
+            border-collapse: collapse;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        button {border:none;}
+
+        ul,
+        ol {
+            padding-left: 10px;
+        }
+
+        li {
+            padding-left: 0;
+        }
+
+        table.wlkm-mw {
+            min-width: 0px !important;
+        }
+
+        .formulaire .inputContainer p {
+            display: flex;
+            align-items:baseline;
+            padding-left:20px;
+            margin-bottom:5px;
+            margin-top:5px;
+        }
+
+        .formulaire .inputContainer p label {
+            margin-left: 5px;
+        }
+
+        .formulaire .inputContainer[data-type="Multiple"] > label, .formulaire .inputContainer[data-type="Single"] > label {
+            padding-bottom:0;margin-bottom:15px;max-width:97%;
+        }
+
+        #formulaire .inputContainer p {
+            display: flex;
+            align-items:baseline;
+            padding-left:20px;
+            margin-bottom:5px;
+            margin-top:5px;
+        }
+
+        #formulaire .inputContainer p label {
+            margin-left: 5px;
+        }
+
+        #formulaire .inputContainer[data-type="Multiple"] > label, #formulaire .inputContainer[data-type="Single"] > label {
+            padding-bottom:0;margin-bottom:15px;max-width:97%;
+        }
+
+        /*        input:required:invalid, select:required:invalid, textarea:required:invalid {
+                    border-color: #8b0000;
+                    outline: 1px solid #8b0000;
+                }*/
+
+        .inputContainer[data-type="Multiple"][data-is-required="required"], #subscribContainer {
+            position: relative;
+        }
+
+        #subscribContainer {width:500px;margin: 0 auto;}
+        .formulaire.half #subscribContainer {width:300px;margin: 0 auto;}
+        .formulaire.half > form, .formulaire.half > div {width:50%;}
+        .formulaire.half > form > div, .formulaire.half > div > div {width:75%;}
+        .formulaire.half > div {min-height:600px;display:flex;justify-content:center;align-items:baseline;}
+
+        .inputContainer[data-type="Multiple"][data-is-required="required"] input[type="radio"], #subscribContainer input[type="radio"]{
+            position: absolute;
+            margin: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            -webkit-appearance: none;
+            pointer-events: none;
+            border: none;
+            background: none;
+        }
+
+        section.flexRow {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: baseline;
+        }
+
+        section.flexRowCenter {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            padding-bottom:0 !important;
+        }
+        section.flexRowCenterContent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .formulaire .inputContainer {position:relative;}
+        /* test if label is displayed */
+        .formulaire label[style="display: none;"] ~ div[id*="containerInfo"] {
+            position: absolute;
+            top: 50%;
+            right: -25px;
+            transform: translateY(-50%);
+        }
+        .formulaire label ~ div[id*="containerInfo"] {
+            position: absolute;
+            top: 49%;
+            right: -25px;
+            transform: translateY(50%);
+        }
+        .formulaire label ~ div[id*="containerInfoBulleinterest"] {
+            top: 0 !important;
+            transform: none !important;
+        }
+
+        .formulaire button,
+        .formulaire .inputContainer,
+        .formulaire #subscriptionsSentence,
+        .formulaire input,
+        .formulaire #phraseSubscription,
+        .formulaire textarea {width:500px;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+        .formulaire #subFields {width:500px;margin:0;}
+
+        .formulaire.half button,
+        .formulaire.half .inputContainer,
+        .formulaire.half #subscriptionsSentence,
+        .formulaire.half input,
+        .formulaire.half #phraseSubscription,
+        .formulaire.half input[type="tel"],
+        .formulaire.half textarea {width:300px;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+        .formulaire.half #subFields {width:300px;margin: 0 auto;}
+
+        .formulaire .inputContainer,
+        .formulaire #subscriptionsSentence {margin:20px auto;}
+
+        #subFields .inputContainer {display:flex;align-items:baseline;padding-left:20px;}
+
+        .formulaire .inputContainer label {text-align:left;line-height:normal;font-size:inherit;display:block;padding-bottom:10px;width:fit-content;position:relative;}
+
+        .formulaire p .inputContainer,
+        .formulaire .inputContainer p input,
+        .formulaire #subscriptionsSentence input,
+        .formulaire #subFields input {width:auto;}
+
+        .formulaire #subFields label {display:inline-block;margin-left:5px;margin-top:3px;}
+
+        #formulaire .inputContainer {position:relative;}
+        /* test if label is displayed */
+        #formulaire label[style="display: none;"] ~ div[id*="containerInfo"] {
+            position: absolute;
+            top: 50%;
+            right: -25px;
+            transform: translateY(-50%);
+        }
+        #formulaire label ~ div[id*="containerInfo"] {
+            position: absolute;
+            top: 49%;
+            right: -25px;
+            transform: translateY(50%);
+        }
+        #formulaire label ~ div[id*="containerInfoBulleinterest"] {
+            top: 0 !important;
+            transform: none !important;
+        }
+
+        #formulaire button,
+        #formulaire .inputContainer,
+        #formulaire #subscriptionsSentence,
+        #formulaire input,
+        #formulaire #phraseSubscription,
+        #formulaire textarea {width:500px;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+        #formulaire #subFields {width:500px;margin:0;}
+
+        #formulaire.half button,
+        #formulaire.half .inputContainer,
+        #formulaire.half #subscriptionsSentence,
+        #formulaire.half input,
+        #formulaire.half #phraseSubscription,
+        #formulaire.half input[type="tel"],
+        #formulaire.half textarea {width:300px;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+        #formulaire.half #subFields {width:300px;margin: 0 auto;}
+
+        #formulaire .inputContainer,
+        #formulaire #subscriptionsSentence {margin:20px auto;}
+
+        #subFields .inputContainer {display:flex;align-items:baseline;padding-left:20px;}
+
+        #formulaire .inputContainer label {text-align:left;line-height:normal;font-size:inherit;display:block;padding-bottom:10px;width:fit-content;position:relative;}
+
+        #formulaire p .inputContainer,
+        #formulaire .inputContainer p input,
+        #formulaire #subscriptionsSentence input,
+        #formulaire #subFields input {width:auto;}
+
+        #formulaire #subFields label {display:inline-block;margin-left:5px;margin-top:3px;}
+
+        #appendCaptcha img {width:300px;}
+
+        section.formulaire select {width:500px;height:40px;padding:0 10px;border-radius:4px;background-color:#f6f6f6;border:1px solid #e1e1e6;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+        section.formulaire.half select {width:300px;height:40px;padding:0 10px;border-radius:4px;background-color:#f6f6f6;border:1px solid #e1e1e6;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+
+        section.formulaire textarea {height:120px;padding:0 10px;border-radius:4px;background-color:#f6f6f6;border:1px solid #e1e1e6;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+
+        #realCaptcha {display: inline-block;}
+
+        label.mceEditable {font-size:inherit;}
+
+        section.flexRow {margin-top:0;}
+
+        input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="date"], input[type="tel"], textarea {border-radius: 4px;border: 1px #e1e1e6 solid;height: 40px;padding: 0 10px;background: #f6f6f6;font-size: 12px; font-family:'Avenir', Tahoma, Geneva, sans-serif;}
+        textarea {padding-bottom: 10px;padding-top:10px;}
+
+        button a {width: 100%;height: 100%;display: block;}
+
+        .formulaire .mceNonEditable.inputContainer[data-is-required="required"] > label:after {content: "*";color: red;position: absolute;right: -15px;top: 0;font-weight: bold;}
+
+        section[data-module="Image seule"] .wlkm-cl > img {height:100%!important;}
+
+        span.icon {display:none;}
+
+        input:invalid + span:before, select:invalid + span:before, textarea:invalid + span:before {width: 3px;content: '';background: red;position: absolute;display: block;height: 100%;left: -50px;top:0;box-shadow: 1px 1px 12px #555;}
+        input[type="tel"]:invalid + span:before {top:-29px;height:calc(100% + 29px)}
+
+        .disableInvalid input:invalid + span:before, .disableInvalid select:invalid + span:before, .disableInvalid textarea:invalid + span:before {display: none;}
+
+        #phraseSubscription {margin: 20px auto;}
+
+        .iti__country-list {color: black !important;}
+
+        .submitError {color: red;}
+
+        .inputContainer[data-type="Subscription"] {margin-top:3px!important;margin-bottom:0!important;}
+        .inputContainer[data-type="Subscription"]:last-child {margin-bottom:42px!important;}
+        .inputContainer[data-type="Subscription"]:first-child {margin-top:-3px!important;}
+
+        #sentenceRGPD span, #subscriptionsSentenceText span {line-height:normal;}
+        #containBackToTop {
+            width: 45px;
+            height: 45px;
+            position: fixed !important;
+            bottom: 10px;
+            right: 10px;
+            display: flex;
+            border-radius: 50%;
+            z-index: 10;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.5;
+            transition: all ease-in-out .2s;
+            cursor: pointer;
+        }
+        #containBackToTop:hover {
+            transition: all ease-in-out .2s;
+            opacity:1;
+        }
+
+        .inputContainer[data-type="integer"] select option[value=""] {
+            color: rgba(0,0,0,0.7);
+        }
+
+        section[data-module^="Video"] .wlkm-cl div:last-of-type {overflow:hidden;padding-bottom:56.25%;position:relative;}
+
+        section[data-module^="Video"] .wlkm-cl > div > iframe {left:0;top:0;bottom:0;right:0;height:100%;width:100%;position:absolute;border:none;}
+
+        section[data-module^="Video"] .wlkm-cl p {display:none!important;}
+
+        @media only screen and (max-width: 768px) {
+
+            section[data-module="Title + Background"] {background-position:center!important;background-size:cover!important}
+
+            section[data-module="Logo alone"] .wlkm-cl {padding-left:0!important;padding-right:0!important;justify-content:center!important;}
+            section[data-module="Logo alone"] .logo {text-align:center!important;}
+
+            #subscriptionsSentenceInput {min-width:20px!important;}
+
+            section.half {background-position:50% 50%!important;background-size:cover!important;}
+
+            section[data-module="Image seule"] .wlkm-cl > img {min-height:none;}
+
+            section[data-module="Double CTAs"] button {width:120px!important;}
+
+            section[data-module^="Menu"] > .wlkm-mw {
+                display: flex;
+            }
+
+            span.icon {
+                display: block;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 40px;
+            }
+
+            .entriesAndButton {
+                display: none !important;
+            }
+
+            .toggled .entriesAndButton {
+                display: block !important;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                z-index: 1;
+                background: white;
+                width: 100% !important;
+            }
+
+            .toggled .entriesAndButton .menuEntries[style] {
+                justify-content: center !important;
+                width: 100% !important;
+            }
+
+            .toggled .menuEntries {
+                flex-wrap: wrap;
+                width: 100%;
+                text-align: left;
+            }
+
+            .toggled .buttonMenu {
+                margin: 20px auto;
+            }
+
+            .wlkm-mw {
+                width: 100% !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important
+            }
+
+            .wlkm-cl {
+                width: 100% !important;
+            }
+
+            .wlkm-hAuto {
+                height: auto !important;
+            }
+
+            .wlkm-mw {
+                width: 100% !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important
+            }
+
+            .wlkm-resp {
+                width: auto !important;
+                max-width: 100% !important;
+            }
+
+            .table[data-module="Image seule"] img.wlkm-resp { /*correctif du bug sur safari où l'image est tout déformée*/
+                width:100%!important;
+                object-fit:cover;
+            }
+
+            .wlkm-resp2 {
+                width: auto !important;
+                max-width: 480px !important;
+            }
+
+            .wlkm-hide {
+                display: none !important;
+            }
+
+            .wlkm-alignCenter {
+                display: block !important;
+                text-align: center !important;
+            }
+
+            .wlkm-alignCenter img {
+                margin: 0 auto;
+            }
+
+
+            .wlkm-pLeft {
+                padding-right: 10px !important;
+            }
+
+            .wlkm-pRight {
+                padding-left: 10px !important;
+            }
+
+            .wlkm-demicl {
+                width: 220px !important;
+            }
+
+            .wlkm-demiResp {
+                width: auto !important;
+                max-width: 220px !important;
+            }
+
+            .wlkm-cl p, .wlkm-cl h2 {
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+
+            .formulaire.half > form, .formulaire.half > div {width:100%;}
+
+            section[data-module="Image seule"] {min-height:auto!important}
+            section[data-module="Paragraph"] .wlkm-mw >.wlkm-cl > div {padding:15px;}
+        }
+        @media screen and (max-width:600px) {
+
+            .toggled .entriesAndButton .menuEntries[style] {justify-content:flex-start!important;width:100%!important;}
+            .toggled .entriesAndButton .menuEntries[style] {flex-direction:column;align-items:center;}
+            .toggled .entriesAndButton .menuEntries div {padding:10px 0;}
+
+            .main-table.responsive,
+            .main-table.responsive .thumb-carousel,
+            .main-table.responsive .thumb-carousel .img-content img,
+            .main-table.responsive .fallback .img-content img {
+                width: 100% !important;
+                height: auto;
+            }
+        }
+
+        @media screen and (max-width:900px) {
+
+            .formulaire.half > div {min-height:initial!important;height:auto!important;}
+
+            .mobileCenteredText {text-align:center;}
+            #form_landing {max-width:100%;}
+            .formulaire button, .formulaire .inputContainer, .formulaire #subscriptionsSentence, .formulaire input, .formulaire #phraseSubscription, .formulaire textarea, .formulaire #subscribContainer, .formulaire #subFields, .formulaire input[type="tel"] {width:90%;max-width:100%;}
+            #formulaire button, #formulaire .inputContainer, #formulaire #subscriptionsSentence, #formulaire input, #formulaire #phraseSubscription, #formulaire textarea, #formulaire #subscribContainer, #formulaire #subFields, #formulaire input[type="tel"] {width:90%;max-width:100%;}
+            section.formulaire select {width:90%;max-width:100%;}
+            section#formulaire select {width:90%;max-width:100%;}
+            .iti--allow-dropdown {width:100%;}
+            input:invalid + span:before, select:invalid + span:before, textarea:invalid + span:before {left:-20px;}
+        }
+
+        .noscroll {
+            position: fixed;
+            overflow: hidden;
+        }
+
+        #overlay {
+            display: none;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: #ffffff;
+        }
+
+        #spinner {
+            display: none;
+            position: fixed;
+            width: 40px;
+            height: 40px;
+            top: 50%;
+            left: 50%;
+            margin-top: -20px;
+            margin-left: -20px;
+            z-index: 101;
+            background-color: #F07575;
+
+            -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+            animation: sk-rotateplane 1.2s infinite ease-in-out;
+        }
+
+        @-webkit-keyframes sk-rotateplane {
+            0% { -webkit-transform: perspective(120px) }
+            50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+            100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+        }
+
+        @keyframes sk-rotateplane {
+            0% {
+                transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+                -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+            } 50% {
+                  transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+                  -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+              } 100% {
+                    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+                    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+                }
+        }
+
+        .successLanding {
+            position: fixed;
+            width:300px;
+            height:100px;
+            left:50%;
+            top:50%;
+            font-family:Tahoma, Geneva, sans-serif;
+            text-align:center;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-content:center;
+            transform: translate(-50%,-50%);
+            color: #155724!important;
+            background-color: #d4edda!important;
+            border: 1px solid #c3e6cb!important;
+            padding:20px 10px;
+            overflow-y: auto;
+        }
+
+        .warningLanding {
+            position: fixed;
+            width:300px;
+            height:100px;
+            left:50%;
+            top:50%;
+            font-family:Tahoma, Geneva, sans-serif;
+            text-align:center;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-content:center;
+            transform: translate(-50%,-50%);
+            color: #8b4f00!important;
+            background-color: #ffc477!important;
+            border: 1px solid #ffa52f!important;
+            padding:20px 10px;
+            overflow-y: auto;
+        }
+
+        .errorLanding {
+            position: fixed;
+            width:300px;
+            height:100px;
+            left:50%;
+            top:50%;
+            font-family:Tahoma, Geneva, sans-serif;
+            text-align:center;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-content:center;
+            transform: translate(-50%,-50%);
+            color: #721c24!important;
+            background-color: #f8d7da!important;
+            border: 1px solid #f5c6cb!important;
+            padding:20px 10px;
+            position: fixed;
+        }
+
+        .little-blocks-line {
+            width: 200px;
+            min-height: 200px;
+            margin: 10px;
+            box-shadow: 0px 10px 25px -15px;
+        }
+        .icon-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px auto;
+            height: 65px;
+            width: 65px;
+        }
+        .text-block-line {
+            margin-bottom: 15px;
+        }
+    /* DEBUT TEST INSERTION CSS MOBILE */
+/* FIN TEST INSERTION CSS MOBILE */
+</style>
+
+
+
+       
+            <style>
+img.mobileImage {
+    display: none !important;
+}
+ @media screen and (max-width: 590px) {
+  img.mobileImage {
+    display: block !important;
+  }
+  img.desktopImage {
+    display: none !important;
+  }
+  section.flexRow.hideMobileBlock {
+      display: none;
+  }
+  .hideMobileImg {
+      display:none !important; 
+   }
+}
+</style></head>
+
+<body>
+<input type="hidden" value="https://s.packpp.dolist.net/" id="associatedDomain"/>
+<input type="hidden" data-displaybutton="center" id="globalOptionsHiddenInput">
+<section class="flexRow" width="100%" style="background-color:#FFF;width:100%;position:relative;" data-module="Menu" data-thumb="https://zupimages.net/up/21/40/3qts.png" data-bgcolor="Full Background" data-label="Menu" data-filtertype="menu" data-id-module="id1364">
+    <div style="margin:0 auto;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;width:1200px;" class="wlkm-mw" data-bgcolor="Content Background">
+        <div class="wlkm-cl" style="padding:10px 10px 10px 10px;display:flex;justify-content:space-between;align-items:center;" data-paddingtop="Top of the block" data-paddingbottom="Bottom of the block" data-maxpaddingtop="60" data-maxpaddingbottom="60">
+            <div class="logo" style="font-size:16px;text-align:center;width:200px;">
+                <img src="https://s.demo.emm20.net/6515/www/gallery/img-tui-67e50f270560b.jpeg" alt="" class="" loading="lazy" data-weight="131.6" data-zone="zoneC" style="height: auto; width: 580px;" width="580" height="580">
+            </div>
+            <div class="entriesAndButton" style="width:auto;display:flex;flex-direction:row;align-items:center;justify-content:flex-end;">
+                <div class="menuEntries" style="width:65%;font-size:16px;text-align:center;display:flex;justify-content:flex-end;">
+                    <div data-color="Text" style="width:125px;"><span style="font-family: inherit;">Menu 1</span></div>
+                    <div data-color="Text" style="width:125px;"><span style="font-family: inherit;">Menu 2</span></div>
+                    <div data-color="Text" style="width:125px;"><span style="font-family: inherit;">Menu 3</span></div>
+                    <div data-color="Text" style="width:125px;"><span style="font-family: inherit;">Menu 4</span></div>
+                    <div data-color="Text" style="width:125px;"><span style="font-family: inherit;">Menu 5</span></div>
+                </div>
+                <div class="buttonMenu" style="font-size: 16px; text-align: center; width: 200px; display: flex; justify-content: center;">
+                    <button data-alignement="Menu" data-size="button" data-color="button" data-min="12" data-max="24" data-type="button" name="button" data-bgcolor="Button" data-buttonmaxwidth="150" style="font-family:Tahoma,Geneva,sans-serif;background-color:#5C9184;color:#F4F9F9;padding:10px;border-radius:5px;color:white;font-size:16px;width:150px;"><span style="font-size: inherit; color: inherit; font-family: inherit;">CTA</span></button>
+                </div>
+            </div>
+        </div>
+        <span class="icon">
+            <i class="fa fa-bars"></i>
+        </span>
+</div></section>
+<section class="flexRow" border="0" cellpadding="0" cellspacing="0" bgcolor="#585858" width="100%" data-module="Title + Background" data-thumb="https://zupimages.net/up/21/40/jd83.png" data-bgcolor="Substitution Background" data-label="Titre + Image de fond" data-filtertype="logo" background="https://s.demo.emm20.net/6515/www/gallery/img-tui-67e50f270560b.jpeg" style="background-image: url(https://s.demo.emm20.net/6515/www/gallery/img-tui-67e50f270560b.jpeg);background-position: center center;background-size: cover;background-repeat: no-repeat;width: 100%;min-height: 500px;position: relative;min-width: 100% !important;" data-bg="Image" data-paddingtop="Top of the block" data-maxpaddingtop="60" data-paddingbottom="Bottom of the block" data-maxpaddingbottom="60" data-id-module="id5689" data-weight="47.7" data-zone="zoneA">
+    <div align="center" style="position:absolute;top:25%;left:50%;transform:translateX(-50%);">
+        <div border="0" width="600" style="margin:0 auto;width:600px;" align="center" cellpadding="0" cellspacing="0" class="wlkm-mw" data-type="blockLogo">
+            <div align="center" valign="top" style="width:80%;font-size:60px;font-family: Tahoma, Geneva, sans-serif;" class="wlkm-mw" data-color="Title" data-size="Title" data-min="16" data-max="90" data-link-color="Title Link" data-maxpaddingbottom="200" data-paddingbottom="Bottom of the block"><h2 style="font-family: inherit; font-weight: bold; margin: 0;">Titre</h2></div>
+            <div class="" style="font-size: 16px; font-weight: bold; margin: 0px auto; padding-top: 20px; display: flex; justify-content: center;" data-maxpaddingtop="60" data-paddingtop="Logo/Title spacing">
+                <button data-alignement="Center" data-size="button" data-color="button" data-min="12" data-max="24" data-type="button" name="button" data-bgcolor="Button" data-buttonmaxwidth="150" style="font-family:Tahoma,Geneva,sans-serif;background-color:#5C9184;color:#F4F9F9;padding:10px;border-radius:5px;color:white;font-size:16px;width:150px;"><span style="font-size: inherit; color: inherit; font-family: inherit;">CTA</span></button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="flexRow" data-module="Footer" data-thumb="https://cdn.welkom.io/templates/common/thumbnails/bloc-txt_1col.jpg" data-bgcolor="Full Background" data-label="Pied de page" data-filtertype="other" style="width:100%;min-height:50px;background:#FFF" data-id-module="id3539">
+    <div class="wlkm-mw">
+        <div class="wlkm-cl" style="width:780px;">
+            <div class="" data-paddingtop="Top of the block" data-paddingbottom="Bottom of the block" data-maxpaddingtop="60" data-maxpaddingbottom="60" data-size="Text" data-color="Text" data-smin="16" data-max="30" data-link-color="Links" style="font-family:Tahoma,Geneva,sans-serif;font-size:16px;line-height:25px;text-align:center;"><p style="font-family: inherit; font-size: inherit; margin-top: 20px; margin-bottom: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+        </div>
+    </div>
+</section>
+<section class="flexRow" style="min-width:100%!important;width:100%;background:#FFF;" data-module="Price bloc" data-thumb="https://s.packpp.dolist.net/TemplateManager/common/thumbnails/bloctarifaire.jpg" data-bgcolor="Full Background" data-label="Offre tarifaire 3 colonnes" data-filtertype="article,button" data-id-module="id861">
+    <div style="margin:0 auto;width:33%;padding-bottom:50px;padding-top:50px;" class="wlkm-mw" data-bgcolor="Bloc left" data-paddingtop="Top of the block" data-maxpaddingtop="60" data-paddingbottom="Bottom of the block" data-maxpaddingbottom="60">
+        <div align="center" style="font-size:18px;padding-bottom:10px;line-height: 20px;" data-color="Title" data-size="Title" data-min="12" data-max="50" data-link-color="Title" data-paddingbottom="Bottom of the title" data-maxpaddingbottom="60"><span style="font-family: inherit; font-weight: bold;">Starter</span></div>
+        <div align="center" style="color:#2B2E33;padding-bottom:10px;font-size: 32px;font-family: Tahoma, Geneva, sans-serif;text-align:center;line-height: 40px;" data-color="Price" data-size="Price" data-min="12" data-max="50" data-link-color="Price" data-paddingbottom="Bottom of the price" data-maxpaddingbottom="60"><h2 style="font-family: inherit; margin: 0; font-size: inherit;"><strong>3.99 €</strong></h2></div>
+        <div align="center" style="color:#2B2E33;font-size: 12px;font-family: Tahoma, Geneva, sans-serif;text-align:center;line-height: 20px;" data-color="Paragraph" data-size="Paragraph" data-min="12" data-max="50" data-link-color="Paragraph link" data-paddingbottom="Bottom of the paragraph" data-maxpaddingbottom="60"><span style="font-family: inherit; margin: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></div>
+        <div class="" style="font-size: 16px; text-align: center; padding-top: 10px; padding-bottom: 10px; display: flex; justify-content: center;">
+            <button data-alignement="Button left" data-size="button" data-color="Button left" data-min="12" data-max="24" data-type="button" name="button" data-bgcolor="Button left" data-buttonmaxwidth="250" style="font-family:Tahoma,Geneva,sans-serif;border:1px solid #5C9184;color:#5C9184;padding:10px;border-radius:5px;font-size:12px;width:158px;background-color:#FFF;line-height: 20px;" data-paddingtopbottom="Top & bottom of the button"><span style="font-size: inherit; color: inherit; font-family: inherit;"><strong>Essayer gratuitement</strong></span></button>
+        </div>
+        <div align="center" style="color:#2B2E33;font-size: 14px;font-family: Tahoma, Geneva, sans-serif;text-align:center;line-height: 20px;" data-color="Description" data-size="Description" data-min="12" data-max="50" data-link-color="Description link"><span style="font-family: inherit; margin: 0; line-height: 2;"> 1 compte gratuit<br> 2 GB de stockage<br> Backup hebdomadaire<br> Partage de dossiers<br> Un support téléphonique 24 / 24<br> </span></div>
+    </div>
+    <div style="margin:0 auto;width:33%;padding-bottom:50px;padding-top:50px;background-color:#f7f7f7;" class="wlkm-mw" data-bgcolor="Bloc center" data-paddingtop="Top of the block" data-maxpaddingtop="60" data-paddingbottom="Bottom of the block" data-maxpaddingbottom="60">
+        <div align="center" style="font-size:18px;padding-bottom:10px;line-height: 20px;" data-color="Title" data-size="Title" data-min="12" data-max="50" data-link-color="Title" data-paddingbottom="Bottom of the title" data-maxpaddingbottom="60"><span style="font-family: inherit; font-weight: bold;">Intermédiaire</span></div>
+        <div align="center" style="color:#2B2E33;padding-bottom:10px;font-size: 32px;font-family: Tahoma, Geneva, sans-serif;text-align:center;line-height: 40px;" data-color="Price" data-size="Price" data-min="12" data-max="50" data-link-color="Price" data-paddingbottom="Bottom of the price" data-maxpaddingbottom="60"><h2 style="font-family: inherit; margin: 0; font-size: inherit;"><strong>19.99 €</strong></h2></div>
+        <div align="center" style="color:#2B2E33;font-size: 12px;font-family: Tahoma, Geneva, sans-serif;text-align:center;line-height: 20px;" data-color="Paragraph" data-size="Paragraph" data-min="12" data-max="50" data-link-color="Paragraph" data-paddingbottom="Bottom of the paragraph" data-maxpaddingbottom="60"><span style="font-family: inherit; margin: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></div>
+        <div class="" style="font-size: 16px; text-align: center; padding-top: 10px; padding-bottom: 10px; display: flex; justify-content: center;">
+            <button data-alignement="Button center" data-size="button" data-color="Button center" data-min="12" data-max="24" data-type="button" name="button" data-bgcolor="Button center" data-buttonmaxwidth="250" style="font-family:Tahoma,Geneva,sans-serif;border:1px solid #5C9184;color:#FFF;padding:10px;border-radius:5px;font-size:12px;width:158px;background-color:#5C9184;" data-paddingtopbottom="Top & bottom of the button"><span style="font-size: inherit; color: inherit; font-family: inherit;"><strong>Essayer gratuitement</strong></span></button>
+        </div>
+        <div align="center" style="color:#2B2E33;font-size: 14px;font-family: Tahoma, Geneva, sans-serif;text-align:center;line-height: 20px;" data-color="Description" data-size="Description" data-min="12" data-max="50" data-link-color="Description link"><span style="font-family: inherit; margin: 0; line-height: 2;"> 1 compte gratuit<br> 2 GB de stockage<br> Backup hebdomadaire<br> Partage de dossiers<br> Un support téléphonique 24 / 24<br> </span></div>
+    </div>
+    <div style="margin:0 auto;width:33%;padding-bottom:50px;padding-top:50px;" class="wlkm-mw" data-bgcolor="Bloc right" data-paddingtop="Top of the block" data-maxpaddingtop="60" data-paddingbottom="Bottom of the block" data-maxpaddingbottom="60">
+        <div align="center" style="font-size:18px;padding-bottom:10px;line-height: 20px;" data-color="Title" data-size="Title" data-min="12" data-max="50" data-link-color="Title" data-paddingbottom="Bottom of the title" data-maxpaddingbottom="60"><span style="font-family: inherit; font-weight: bold;">Pro</span></div>
+        <div align="center" style="color:#2B2E33;padding-bottom:10px;font-size: 32px;font-family: Tahoma, Geneva, sans-serif;text-align:center;line-height: 40px;" data-color="Price" data-size="Price" data-min="12" data-max="50" data-link-color="Price" data-paddingbottom="Bottom of the price" data-maxpaddingbottom="60"><h2 style="font-family: inherit; margin: 0; font-size: inherit;"><strong>29.99 €</strong></h2></div>
+        <div align="center" style="color:#2B2E33;font-size: 12px;font-family: Tahoma, Geneva, sans-serif;text-align:center;line-height: 20px;" data-color="Paragraph" data-size="Paragraph" data-min="12" data-max="50" data-link-color="Paragraph" data-paddingbottom="Bottom of the paragraph" data-maxpaddingbottom="60"><span style="font-family: inherit; margin: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></div>
+        <div class="" style="font-size: 16px; text-align: center; padding-top: 10px; padding-bottom: 10px; display: flex; justify-content: center;">
+            <button data-alignement="Button right" data-size="button" data-color="Button right" data-min="12" data-max="24" data-type="button" name="button" data-bgcolor="Button right" data-buttonmaxwidth="250" style="font-family:Tahoma,Geneva,sans-serif;border:1px solid #5C9184;color:#5C9184;padding:10px;border-radius:5px;font-size:12px;width:158px;background-color:#FFF;" data-paddingtopbottom="Top & bottom of the button"><span style="font-size: inherit; color: inherit; font-family: inherit;"><strong>Essayer gratuitement</strong></span></button>
+        </div>
+        <div align="center" style="color:#2B2E33;font-size: 14px;font-family: Tahoma, Geneva, sans-serif;text-align:center;line-height: 20px;" data-color="Description" data-size="Description" data-min="12" data-max="50" data-link-color="Description link"><span style="font-family: inherit; margin: 0; line-height: 2;"> 1 compte gratuit<br> 2 GB de stockage<br> Backup hebdomadaire<br> Partage de dossiers<br> Un support téléphonique 24 / 24<br> </span></div>
+    </div>
+</section>
+<section class="flexRow" data-module="Video" data-thumb="https://s.packpp.dolist.net/TemplateManager/common/thumbnails/wbaa.jpg" data-bgcolor="Full Background" data-label="Video" data-filtertype="video" style="width:100%;min-height:50px;background:#FFF" data-paddingtop="Top of the block" data-paddingbottom="Bottom of the block" data-maxpaddingtop="60" data-maxpaddingbottom="60" data-id-module="id8357">
+    <div class="wlkm-mw">
+        <div class="wlkm-cl" style="width:780px;">
+            <div class="" style="color:#2B2E33;font-family:Tahoma,Geneva,sans-serif;font-size:16px;line-height:25px;text-align:center;"><iframe width="560" height="315" allowfullscreen="true" title="YouTube video player" src="//www.youtube.com/embed/pt-MlxrURh8" loading="lazy"></iframe></div>
+        </div>
+    </div>
+</section>
+<section class="flexRow" data-module="Title + paragrap left + img left Accessible" data-thumb="https://s.packpp.dolist.net/TemplateManager/common/thumbnails/4usb.jpg" data-bgcolor="Full Background" data-label="Titre + paragraphe à droite et image à gauche (accessible)" data-filtertype="accessibility,image" style="width:100%;min-height:300px;background:#FFF" data-id-module="id9047">
+    <div class="wlkm-mw" style="text-align:center;display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:space-between;width:100%;">
+        <div class="wlkm-cl" style="width:47%;">
+            <img src="https://s.demo.emm20.net/6515/www/gallery/img-tui-67e50f270560b.jpeg" alt="" style="width: 580px; max-height: 350px; object-fit: cover; height: auto;" class="wlkm-resp" loading="lazy" data-weight="131.6" data-zone="zoneC" width="580" height="580">
+        </div>
+        <div class="wlkm-cl" style="width:47%;text-align:left;padding-left:10px;padding-right:10px;">
+            <div class="" data-size="Title" data-color="Title" data-min="40" data-max="70" data-link-color="Title link" style="color: #191919; font-family: Tahoma, Geneva, sans-serif; font-size: 60px; padding-bottom: 40px;" data-paddingbottom="Bottom of the title" data-maxpaddingbottom="60"><h2 style="font-size: inherit; margin: 10px 0px; font-weight: bold;"><strong>Titre</strong></h2></div>
+            <div class="" data-size="Text" data-color="Text" data-smin="16" data-max="30" data-link-color="Links" style="color: #191919; font-family: Tahoma, Geneva, sans-serif; font-size: 16px; line-height: 25px; padding-bottom: 40px;" data-paddingbottom="Bottom of the paragraph" data-maxpaddingbottom="60"><p style="font-family: inherit; font-size: inherit; margin: 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+            <div class="mobileCenteredText" style="font-size: 16px; display: flex; justify-content: center;">
+                <button data-alignement="Right" data-size="button" data-color="button" data-min="12" data-max="24" data-type="button" name="button" data-bgcolor="Button" data-buttonmaxwidth="250" style="font-family: Tahoma, Geneva, sans-serif; background-color: #427065; padding: 10px; border-radius: 5px; color: #191919; font-size: 16px; width: 158px; line-height: 20px;" data-paddingtopbottom="Top & bottom of the button"><span style="font-size: inherit; color: inherit; font-family: inherit;">CTA</span></button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="flexRow" style="min-width:100%!important;width:100%;background:#FFF;" data-module="3 articles image Top with CTA" data-thumb="https://s.packpp.dolist.net/TemplateManager/common/thumbnails/blog-article-cta_3col.jpg" data-bgcolor="Full Background" data-label="Article sur 3 colonnes" data-filtertype="article,button,image" data-id-module="id1497">
+    <div style="margin:0 auto;width:33%;padding-bottom:10px;" class="wlkm-mw" data-bgcolor="Content Background" data-paddingtop="Top of the block" data-maxpaddingtop="60" data-paddingbottom="Bottom of the block" data-maxpaddingbottom="60">
+        <div align="center" style="padding-bottom:10px;" data-paddingbottom="Bottom of the image" data-maxpaddingbottom="60">
+            <img src="https://s.demo.emm20.net/6515/www/gallery/img-tui-67e50f270560b.jpeg" width="429" style="display: block; width: 429px; max-width: 100%; margin: 0px auto; height: auto;" alt="" class="wlkm-resp" loading="lazy" data-weight="44.5" data-zone="zoneA" height="446">
+        </div>
+        <div align="left" style="color: #191919; padding-bottom: 40px; font-size: 32px; font-family: Tahoma, Geneva, sans-serif; text-align: center; line-height: 30px;" data-color="Title" data-size="Title" data-min="12" data-max="50" data-link-color="Title Link" data-paddingbottom="Bottom of the title" data-maxpaddingbottom="60"><h2 style="font-family: inherit; margin: 0px; font-size: inherit; font-weight: bold;"><strong>Titre</strong></h2></div>
+        <div align="left" style="color: #191919; padding-left: 10px; padding-right: 10px; padding-bottom: 40px; font-size: 16px; font-family: Tahoma, Geneva, sans-serif; line-height: 20px;" data-color="Text" data-size="Text" data-min="10" data-max="24" data-link-color="Text Link"><span style="font-family: inherit; display: block;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam naonumy eirmod tempam et justo du olores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempam et justo duo dolores et ea rebum.</span></div>
+        <div class="" style="font-size: 16px; text-align: center; display: flex; justify-content: center;">
+            <button data-alignement="All buttons" data-size="button" data-color="button" data-min="12" data-max="24" data-type="button" name="button" data-bgcolor="Button" data-buttonmaxwidth="250" style="font-family: Tahoma, Geneva, sans-serif; background-color: #5c9184; padding: 10px; border-radius: 5px; color: #191919; font-size: 16px; width: 158px; line-height: 20px;" data-paddingtopbottom="Top & bottom of the button"><span style="font-size: inherit; color: inherit; font-family: inherit;">CTA</span></button>
+        </div>
+    </div>
+    <div style="margin:0 auto;width:33%;padding-bottom:10px;" class="wlkm-mw" data-bgcolor="Content Background" data-paddingtop="Top of the block" data-maxpaddingtop="60" data-paddingbottom="Bottom of the block" data-maxpaddingbottom="60">
+        <div align="center" style="padding-bottom:10px;" data-paddingbottom="Bottom of the image" data-maxpaddingbottom="60">
+            <img src="https://s.demo.emm20.net/6515/www/gallery/img-tui-67e50f270560b.jpeg" width="360" style="display: block; width: 360px; max-width: 100%; margin: 0px auto; height: auto;" alt="" class="wlkm-resp" loading="lazy" data-weight="110.7" data-zone="zoneC" height="361">
+        </div>
+        <div align="left" style="color: #191919; padding-bottom: 40px; font-size: 32px; font-family: Tahoma, Geneva, sans-serif; text-align: center; line-height: 30px;" data-color="Title" data-size="Title" data-min="12" data-max="50" data-link-color="Title Link" data-paddingbottom="Bottom of the title" data-maxpaddingbottom="60"><h2 style="font-family: inherit; margin: 0px; font-size: inherit; font-weight: bold;"><strong>Titre</strong></h2></div>
+        <div align="left" style="color: #191919; padding-left: 10px; padding-right: 10px; padding-bottom: 40px; font-size: 16px; font-family: Tahoma, Geneva, sans-serif; line-height: 20px;" data-color="Text" data-size="Text" data-min="10" data-max="24" data-link-color="Text Link"><span style="font-family: inherit; display: block;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam naonumy eirmod tempam et justo du olores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempam et justo duo dolores et ea rebum.</span></div>
+        <div class="" style="font-size: 16px; text-align: center; display: flex; justify-content: center;">
+            <button data-alignement="All buttons" data-size="button" data-color="button" data-min="12" data-max="24" data-type="button" name="button" data-bgcolor="Button" data-buttonmaxwidth="250" style="font-family: Tahoma, Geneva, sans-serif; background-color: #5c9184; padding: 10px; border-radius: 5px; color: #191919; font-size: 16px; width: 158px; line-height: 20px;" data-paddingtopbottom="Top & bottom of the button"><span style="font-size: inherit; color: inherit; font-family: inherit;">CTA</span></button>
+        </div>
+    </div>
+    <div style="margin:0 auto;width:33%;padding-bottom:10px;" class="wlkm-mw" data-bgcolor="Content Background" data-paddingtop="Top of the block" data-maxpaddingtop="60" data-paddingbottom="Bottom of the block" data-maxpaddingbottom="60">
+        <div align="center" style="padding-bottom:10px;" data-paddingbottom="Bottom of the image" data-maxpaddingbottom="60">
+            <img src="https://s.demo.emm20.net/6515/www/gallery/img-tui-67e50f270560b.jpeg" width="360" style="display: block; width: 360px; max-width: 100%; margin: 0px auto; height: auto;" alt="" class="wlkm-resp" loading="lazy" data-weight="22.4" data-zone="zoneA" height="360">
+        </div>
+        <div align="left" style="color: #191919; padding-bottom: 40px; font-size: 32px; font-family: Tahoma, Geneva, sans-serif; text-align: center; line-height: 30px;" data-color="Title" data-size="Title" data-min="12" data-max="50" data-link-color="Title Link" data-paddingbottom="Bottom of the title" data-maxpaddingbottom="60"><h2 style="font-family: inherit; margin: 0px; font-size: inherit; font-weight: bold;"><strong>Titre</strong></h2></div>
+        <div align="left" style="color: #191919; padding-left: 10px; padding-right: 10px; padding-bottom: 40px; font-size: 16px; font-family: Tahoma, Geneva, sans-serif; line-height: 20px;" data-color="Text" data-size="Text" data-min="10" data-max="24" data-link-color="Text Link"><span style="font-family: inherit; display: block;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam naonumy eirmod tempam et justo du olores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempam et justo duo dolores et ea rebum.</span></div>
+        <div class="" style="font-size: 16px; text-align: center; display: flex; justify-content: center;">
+            <button data-alignement="All buttons" data-size="button" data-color="button" data-min="12" data-max="24" data-type="button" name="button" data-bgcolor="Button" data-buttonmaxwidth="250" style="font-family: Tahoma, Geneva, sans-serif; background-color: #5c9184; padding: 10px; border-radius: 5px; color: #191919; font-size: 16px; width: 158px; line-height: 20px;" data-paddingtopbottom="Top & bottom of the button"><span style="font-size: inherit; color: inherit; font-family: inherit;">CTA</span></button>
+        </div>
+    </div>
+</section>
+<section class="flexRow" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="100%" style="min-width:100%!important;width:100%;background:#FFF;" data-module="Social Medias 2" data-thumb="https://s.packpp.dolist.net/TemplateManager/common/thumbnails/bloc-social_media2.jpg" data-bgcolor="Full Background" data-label="Médias sociaux - bloc n°2" data-filtertype="social-medias" data-id-module="id5263">
+    <div align="center" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="600" style="margin:0 auto;width:600px;padding:20px 10px 10px 10px;" class="wlkm-mw" data-bgcolor="Content Background" data-paddingtop="Top of the block" data-maxpaddingtop="60">
+
+        <div align="center" valign="top" style="color: #191919; padding-bottom: 10px; line-height: 16px; font-size: 11px; font-weight: 300; font-family: Tahoma, Geneva, sans-serif;" data-color="Text" data-size="Text" data-min="8" data-max="16" data-link-color="Links"><span style="font-family: inherit;"> Retrouvez nous sur les réseaux sociaux </span></div>
+        <div style="padding:0 0 20px 0;" data-paddingbottom="Bottom of the block" data-maxpaddingbottom="60">
+            <div border="0" cellpadding="0" cellspacing="0" data-type="social-medias" data-max="7" data-iconsize="30" data-iconbgcolor="none" data-iconcolor="#ffffff" data-iconshape="circle">
+                <span valign="bottom" style="padding:0 4px;" data-paddingleftright="between the icons" data-maxpaddingleftright="10" data-steppaddingleftright="1"><img src="https://s.packpp.dolist.net/TemplateManager/common/images/set2/fb.png" alt="Facebook" width="30" height="30" style="max-width:60px;height:30px;" border="0" class="" loading="lazy"></span>
+                <span valign="bottom" style="padding:0 4px;" data-paddingleftright="between the icons" data-maxpaddingleftright="10" data-steppaddingleftright="1"><img src="https://s.packpp.dolist.net/TemplateManager/common/images/set2/pin.png" alt="Pinterest" width="30" height="30" style="max-width:60px;height:30px;" border="0" class="" loading="lazy"></span>
+                <span valign="middle" style="padding:0 4px;" data-paddingleftright="between the icons" data-maxpaddingleftright="10" data-steppaddingleftright="1"><img src="https://s.packpp.dolist.net/TemplateManager/common/images/set2/x.png" alt="X" width="30" height="30" style="max-width:60px;height:30px;" border="0" class="" loading="lazy"></span>
+                <span valign="bottom" style="padding:0 4px;" data-paddingleftright="between the icons" data-maxpaddingleftright="10" data-steppaddingleftright="1"><img src="https://s.packpp.dolist.net/TemplateManager/common/images/set2/insta.png" alt="Instagram" width="30" height="30" style="max-width:60px;height:30px;" border="0" class="" loading="lazy"></span>
+                <span valign="bottom" style="padding:0 4px;" data-paddingleftright="between the icons" data-maxpaddingleftright="10" data-steppaddingleftright="1"><img src="https://s.packpp.dolist.net/TemplateManager/common/images/set2/drib.png" alt="Dribbble" width="30" height="30" style="max-width:60px;height:30px;" border="0" class="" loading="lazy"></span>
+                <span valign="bottom" style="padding:0 4px;" data-paddingleftright="between the icons" data-maxpaddingleftright="10" data-steppaddingleftright="1"><img src="https://s.packpp.dolist.net/TemplateManager/common/images/set2/tik.png" alt="TikTok" width="30" height="30" style="max-width:60px;height:30px;" border="0" class="" loading="lazy"></span>
+                <span valign="middle" style="padding:0 4px;" data-paddingleftright="between the icons" data-maxpaddingleftright="10" data-steppaddingleftright="1"><img src="https://s.packpp.dolist.net/TemplateManager/common/images/set2/lkin.png" alt="LinkedIn" width="30" height="30" style="max-width:60px;height:30px;" border="0" class="" loading="lazy"></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+
+</html>
+
